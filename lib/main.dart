@@ -537,7 +537,6 @@ class _MainPageState extends State<MainPage> {
             ),
             onPressed: () {
               setState(() {
-                print("Apertou o botão!");
                 item = Random().nextInt(listaBandeiras.length);
               });
             },
@@ -549,17 +548,6 @@ class _MainPageState extends State<MainPage> {
               ),
             ),
           ),
-          SizedBox(
-            height: 60,
-          ),
-          Container(
-            child: Text(
-              "Criado por Matheus Camilo",
-              style: TextStyle(
-                color: Color.fromRGBO(0, 0, 0, 0.4)
-              ),
-            ),
-          )
         ],
       ),
     );
